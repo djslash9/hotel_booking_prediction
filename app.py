@@ -184,6 +184,17 @@ page = st.sidebar.selectbox("Select a page:", list(PAGES.keys()))
 # Display the selected page
 PAGES[page]()
 
+# Footer
+st.write("© 2024 Untangle BI | Gateway ICT")
+
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 
 
 
