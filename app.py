@@ -167,7 +167,6 @@ def customer_page():
 def dashboard_page():
     st.title("Dashboard Page")
     st.write("Here you can visualize data and see various insights.")
-    st.line_chart({"data": [10, 20, 30, 40, 50]})
 
 # Define a dictionary to map page names to functions
 PAGES = {
